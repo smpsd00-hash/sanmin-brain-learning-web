@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="三民國小｜我的大腦，我會用！一至六年級認識大腦課程地圖與16個可直接使用的教師單元教案。" />
+  <meta name="theme-color" content="#16324F" />
+  <title>我的大腦，我會用！｜三民國小認識自己的大腦課程</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="回到首頁">
+        <span class="brand-mark">🧠</span>
+        <span>
+          <strong>我的大腦，我會用！</strong>
+          <small>三民國小「認識自己的大腦」課程資源</small>
+        </span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="開啟選單">☰</button>
+      <nav class="main-nav" id="mainNav">
+        <a href="#home">首頁</a>
+        <a href="#map">1–6年級課程地圖</a>
+        <a href="#lessons">16個單元教案</a>
+        <a href="#print">列印與使用</a>
+        <a href="#about">設計理念</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">自主學習 × SEL × 學習科學 × 輔導教育</div>
+          <h1>認識自己的大腦，<span>學會學習自己。</span></h1>
+          <p class="hero-lead">從一年級到六年級，以「認識自己 → 學會方法 → 自主調整」為主軸，循序建立記憶、睡眠、注意力與壓力情緒四項核心能力。</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#map">先看課程地圖</a>
+            <a class="btn secondary" href="#lessons">直接找教案</a>
+          </div>
+          <div class="hero-note">每個單元皆附：學習目標、教師引導語、活動流程、學習單、課後練習與評量提示。</div>
+        </div>
+        <div class="hero-card">
+          <div class="brain-orbit orbit-1"></div>
+          <div class="brain-orbit orbit-2"></div>
+          <div class="brain-orbit orbit-3"></div>
+          <div class="brain-core">🧠</div>
+          <div class="hero-pills">
+            <span>🧠 記憶</span><span>😴 睡眠</span><span>🎯 注意力</span><span>❤️ 壓力與情緒</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="map">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Curriculum Map</div>
+            <h2>一～六年級課程地圖</h2>
+          </div>
+          <p>同一套四大主題，隨年齡提升深度。低年級重在經驗與覺察；中年級進入策略；高年級練習監控、選擇與修正。</p>
+        </div>
+        <div class="progress-strip">
+          <div class="progress-step"><span>01–02</span><strong>認識自己</strong><small>我發現……</small></div>
+          <div class="progress-arrow">→</div>
+          <div class="progress-step"><span>03–04</span><strong>學會方法</strong><small>我可以……</small></div>
+          <div class="progress-arrow">→</div>
+          <div class="progress-step"><span>05–06</span><strong>自主調整</strong><small>我會調整……</small></div>
+        </div>
+        <div class="table-wrap">
+          <table class="curriculum-table" id="curriculumTable"></table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="lessons">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">16 Ready-to-Use Lessons</div>
+            <h2>16 個單元教案</h2>
+          </div>
+          <p>可依班級時間、學生需求與既有課程彈性調整。建議每單元 40 分鐘，也可拆成 2 次 20 分鐘。</p>
+        </div>
+
+        <div class="filters" id="lessonFilters">
+          <button class="filter-chip active" data-filter="all">全部 16</button>
+          <button class="filter-chip" data-filter="1">一</button>
+          <button class="filter-chip" data-filter="2">二</button>
+          <button class="filter-chip" data-filter="3">三</button>
+          <button class="filter-chip" data-filter="4">四</button>
+          <button class="filter-chip" data-filter="5">五</button>
+          <button class="filter-chip" data-filter="6">六</button>
+          <span class="filter-divider"></span>
+          <button class="filter-chip theme-chip" data-theme="memory">🧠 記憶</button>
+          <button class="filter-chip theme-chip" data-theme="sleep">😴 睡眠</button>
+          <button class="filter-chip theme-chip" data-theme="attention">🎯 注意力</button>
+          <button class="filter-chip theme-chip" data-theme="stress">❤️ 壓力情緒</button>
+        </div>
+        <div class="lesson-grid" id="lessonGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="print">
+      <div class="container print-section">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Teacher Use</div>
+            <h2>列印與使用</h2>
+          </div>
+          <p>打開任一單元後，可直接使用「列印本單元」功能。瀏覽器會自動套用教師友善列印版面。</p>
+        </div>
+        <div class="print-cards">
+          <div class="info-card">
+            <h3>🖨️ 列印教案</h3>
+            <p>在單元詳細頁按「列印本單元」，即可列印學習目標、教學流程與教師引導語。</p>
+          </div>
+          <div class="info-card">
+            <h3>✍️ 列印學習單</h3>
+            <p>同一頁面往下即可看到學生學習單；建議 A4 直式列印，可直接發給學生。</p>
+          </div>
+          <div class="info-card">
+            <h3>📱 手機也能看</h3>
+            <p>網站採響應式設計，教師可在教室用手機、平板或電腦快速查找單元。</p>
+          </div>
+          <div class="info-card">
+            <h3>🌐 GitHub + Netlify</h3>
+            <p>純靜態網站，不需要後端。可直接上傳 GitHub repository，再在 Netlify 選擇 Import from Git。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div>
+          <div class="eyebrow">Design Principles</div>
+          <h2>設計理念</h2>
+          <p>本資源把「認識自己的大腦」定位為一套全校共同語言，而不是額外增加的知識課。教師不需要成為腦科學專家，也能透過生活化情境、短活動與反思，陪學生逐步形成自我理解與自我調整能力。</p>
+        </div>
+        <div class="principles">
+          <div class="principle"><b>01</b><span>先經驗，再命名</span><small>從孩子熟悉的生活經驗進入，而不是先講名詞。</small></div>
+          <div class="principle"><b>02</b><span>先練習，再評估</span><small>讓學生實際嘗試策略，再討論哪一種方法適合自己。</small></div>
+          <div class="principle"><b>03</b><span>理解情緒，不壓抑情緒</span><small>情緒是訊號；調節是為了更有能力做出選擇。</small></div>
+          <div class="principle"><b>04</b><span>逐步放手，走向自主</span><small>從教師示範到學生自我監控與修正。</small></div>
+        </div>
+      </div>
+      <div class="container source-note">
+        <strong>教師提醒：</strong>本網站為教育用途課程設計，不作醫療診斷或心理治療工具。若學生出現持續、明顯或影響日常功能的睡眠、情緒、注意力或壓力問題，仍應依學校輔導系統與專業資源進一步處理。
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><strong>我的大腦，我會用！</strong><br><small>三民國小「認識自己的大腦」課程資源</small></div>
+      <div class="footer-links"><a href="#home">回到首頁</a><a href="#map">課程地圖</a><a href="#lessons">16個教案</a></div>
+    </div>
+  </footer>
+
+  <div class="modal" id="lessonModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="modal"></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-header">
+        <div>
+          <div class="lesson-meta" id="modalMeta"></div>
+          <h2 id="modalTitle"></h2>
+        </div>
+        <div class="modal-actions">
+          <button class="icon-btn" id="printLesson" title="列印本單元">🖨️</button>
+          <button class="icon-btn" data-close="modal" title="關閉">✕</button>
+        </div>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
